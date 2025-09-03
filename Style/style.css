@@ -1,0 +1,1247 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header
+{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(124, 0, 0, 0.764);
+    z-index: 10;
+    color: white;
+}
+.main-header-ul li
+{
+    display: inline-block;
+    padding: 0px 4px 10px 4px;
+    margin: 0 15px;
+}
+.main-header-ul
+{
+    float: right;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+.main-header-liblog
+{
+    position: relative;
+}
+.header-Selection
+{
+position: absolute;
+top: 35px;
+left: -60px;
+height: 200px;
+width: 190px;
+background-color: rgba(253, 253, 253, 0.856);
+border-radius: 10px;
+list-style: none;
+text-align: center;
+visibility: hidden;
+opacity: 0;
+}
+.header-Selection li
+{
+color: rgb(221, 0, 0);
+height: 33.5%;
+line-height: 66.5px;
+width: 60%;
+margin: auto;
+}
+.main-header-liblog:hover .header-Selection
+{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+.main-header-icon
+{
+    float: left;
+margin: 10px 30px 0 25px;
+}
+.main-header-input
+{
+    position: relative;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+.main-header-icon i
+{
+    font-size: 28px;
+}
+.main-header-input input
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+}
+.main-header-input i 
+{
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: black;
+}
+.main-Content-Container
+{
+    width: 100%;
+    height: 100vh;
+position: relative;
+background-image: url("../Images/Court3.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.main-Content
+{
+    width: 100%;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgba(255, 255, 255, 0.945);
+    z-index: 3;
+}
+.main-Content h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.main-Content p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.688);
+}
+.main-Overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+}
+.mainbtn
+{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    border: 0cap;
+    text-transform: capitalize;
+    font-size: 17px;
+cursor: pointer;
+}
+.btnmain1
+{
+    color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.btnmain2
+{
+    background-color: rgb(153, 1, 1);
+    color:  rgba(255, 255, 255, 0.771);
+}
+.main-header-ul li a
+{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-header-ul li 
+{
+    padding-bottom: 10px;
+   position: relative;
+}
+.main-header-ul li a::after
+{
+    position: absolute;
+    content: "";
+ 
+    height:5px;
+    width: 0;
+
+    bottom: 0;
+    left: 0;
+
+    background-color: yellow;
+    opacity: 0.8;
+}
+.main-header-ul li a:hover::after
+{
+    height: 5px;
+    width: 100%;
+    opacity: 1;
+
+    transition:0.8s ;
+}
+.btnmain1:hover
+{
+    background-color: rgba(255, 255, 255,0.626);
+}
+.btnmain2:hover
+{
+    background-color: rgba(153, 1, 1, 0.626);
+}
+.Welcome-Container
+{
+    width: 90%;
+    margin: auto;
+
+}
+.Welcome-Container h2
+{
+text-align: center;
+font-size: 30px;
+letter-spacing: 2px;
+font-weight: bold;
+padding: 70px 0px 10px 0;
+text-transform: capitalize;
+}
+.Welcome-Container .Welcome-pLine-Header
+{
+    height: 5px;
+    width: 90px;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+.Welcome-Parent
+{
+    width: 100%;
+    height: 450px;
+    text-align: center;
+}
+.Welcome-Parent div
+{
+    width: 30%;
+    float: left;
+    border: 1px solid rgb(173, 2, 2);
+    border-radius: 15px;
+}
+.Welcome-div2
+{
+    margin: 0 5%;
+}
+.Welcome-div i
+{
+padding: 35px 0;
+    font-size: 30px;
+    color: rgb(173, 2, 2);
+}
+.Welcome-div{
+    position: relative;
+}
+.Welcome-div .Welcome-p1
+{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 35px;
+}
+.Welcome-div .Welcome-p2
+{
+ font-size: 20px;
+ padding-bottom: 35px;
+}
+.Welcome-div a
+{
+ display: inline-block;
+ font-size: 18px;
+ padding-bottom: 35px;
+}
+.Welcome-div::after
+{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(173, 2, 2);
+    opacity: 1;
+    border-radius: 15px;
+    z-index: -1;
+}
+.Welcome-div:hover::after
+{
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+    transition: 0.6s;
+}
+.Welcome-div:hover .Welcome-p1
+{
+    color: red;
+}
+.Welcome-div a
+{
+    text-decoration: none;
+    color: rgb(153, 1, 1);
+}
+.Feauture-Container
+{
+    height: 850px;
+    width: 100%;
+    background-color: rgba(222, 0, 0, 0.14);
+}
+.Feauture-Container h2
+{
+text-align: center;
+font-size: 30px;
+letter-spacing: 2px;
+font-weight: bold;
+padding: 50px 0px 10px 0;
+text-transform: capitalize;
+}
+.Feauture-Container .Feature-UnderHeader
+{
+    height: 5px;
+    width: 90px;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom:50px;
+}
+.Feauture-Container .Feature-Parent
+{
+    width: 65%;
+    margin: auto;
+    height: 300px;
+}
+.Feature-Parent .Feature-div
+{
+    width: 32%;
+    height: 90%;   
+    float: left;
+    position: relative;
+}
+.Feature-Parent .Feature-div2,.Feature-div5
+{
+    margin: 0 2%;
+}
+.Feature-overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(230, 14, 14, 0.334);
+    position: relative;
+    color: white;
+    opacity: 0;
+}
+.Feature-div
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Feature-overlay .Feature-InnerOverlay
+{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.Feature-InnerOverlay p
+{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.Feature-InnerOverlay i
+{
+    font-size: 18px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+.Feature-overlay:hover
+{
+    opacity: 1;
+    transition: 0.3s;
+}
+.Feature-InnerOverlay i:hover
+{
+    color: yellow;
+}
+.Feature-div1
+{
+    background-image: url("../Images/Tshirtn1.jpg");
+}
+.Feature-div2
+{
+    background-image: url("../Images/TShirt2.jpg");
+    background-position: center;
+}
+.Feature-div3
+{
+    background-image: url("../Images/al1-min.jpg");
+    background-position:  top;
+}
+.Feature-div4
+{
+    background-image: url("../Images/pogba.webp");
+    background-position: top;
+}
+.Feature-div5
+{
+    background-image: url("../Images/emam.jpg");
+    background-position: top center;
+}
+.Feature-div6
+{
+    background-image: url("../Images/mo.jpg");
+    background-position: right;
+}
+.Offer-Container
+{
+    width: 80%;
+    margin: auto;
+}
+.Offer-Top-Bottom
+{
+    height: 800px;
+    width: 100%;
+    margin: auto;
+}
+.Offer-Top h2
+{
+text-align: center;
+font-size: 30px;
+letter-spacing: 2px;
+font-weight: bold;
+padding: 70px 0px 10px 0;
+text-transform: capitalize;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Offer-Top .ulline-h2
+{
+     height: 5px;
+    width: 90px;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Offer-Parent
+{
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+.Offer-Parent .offer-parent-div
+{
+    display: inline;
+    width: 30%;
+    height: 95%;
+    float: left;
+    text-align: center;
+    border: 1px solid rgb(153, 1, 1);
+    border-radius: 15px;
+    position: relative;
+
+}
+.Offer-Parent .Offer-Parent1-child2
+{
+    margin: 0 5%;
+}
+.offer-parent-div i
+{
+position: absolute;
+top: 20px;
+left: 15px;
+font-size: 30px;
+color: rgb(153, 1, 1);
+
+}
+.offer-parent-div .Offer-P
+{
+position: absolute;
+top: 25px;
+left: 55px;
+font-size: 25px;
+font-weight: bold;
+color: rgb(0, 0, 0);
+letter-spacing: 1px;
+font-family: Arial, Helvetica, sans-serif;
+text-align: left;
+}
+.Offer-span
+{
+font-size: 18px;
+letter-spacing: 1.5px;
+color: rgba(0, 0, 0, 0.371);
+}
+.offer-parent-div::after
+{
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 50%;
+    top: 0;
+    left: 0;
+    background-color: rgba(153, 1, 1);
+    opacity: 0;
+    border-radius: 15px;
+    z-index: -1;
+}
+.offer-parent-div:hover::after
+{
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+.offer-parent-div:hover .Offer-P
+{
+    color:rgb(246, 6, 6);
+}
+.Offer-Bottom
+{
+    margin-top: 80px;
+}
+.Offer-textdiv
+{
+    text-align: left;
+    float: left;
+}
+.Offer-textdiv .offer-textdivh2
+{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+.Offer-textdiv .offerultextdivh2
+{
+height: 3px;
+width: 13%;
+background-color: rgb(173, 2, 2);
+border-radius: 15px;
+border: none;
+margin-bottom: 30px;
+}
+.offer-textdivp
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.284);
+    padding-bottom: 20px;
+}
+.Offer-textdiv ul
+{
+    list-style: none;
+}   
+.Offer-textdiv ul li
+{
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.636);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Offer-Imgdiv
+{
+    float: right;
+    width: 40%;
+    height: 55%;
+}
+.Offer-Imgdiv .Offer-image
+{
+    height: 90%;
+    width: 70%;
+background-image: url("../Images/arsenal.jpg");
+background-size: cover;
+margin: auto;
+}
+.offer-icon
+{
+    width: 70%;
+    margin:10px auto;
+    text-align: center;
+}
+.offer-icon i
+{
+    padding: 0 5px;
+    font-size: 18px;
+    color: rgba(173, 49, 0, 0.403);
+    cursor: pointer;
+}
+.offer-icon .i1
+{
+    color: rgb(153, 1, 1);
+}
+.offer-icon .i2:hover
+{
+     color: rgb(153, 1, 1);
+}
+.offer-icon .i3:hover
+{
+     color: rgb(153, 1, 1);
+}
+.Offer-textdiv ul li i
+{
+    color: rgb(153, 1, 1);
+    padding-right: 10px;
+}
+.Image-Container
+{
+    width: 100%;
+   background-image: url("../Images/33.jpg");
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+       position: relative;
+
+}
+.Image-Parent
+{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+    text-align: center;
+}
+.Image-Parent .Image-div
+{
+    height: 100px;
+    width: 17.5%;
+    float: left;
+    margin: 210px 0;
+    border: 0;
+}
+.Image-Parent .Image-div1
+{
+margin-left:  10.5%;
+}
+.Image-Parent .Image-div2
+{
+margin-left: 3%;
+}
+.Image-Parent .Image-div3
+{
+margin-left: 3%;
+}
+.Image-Parent .Image-div4
+{
+margin-left: 3%;
+}
+
+.Image-Parent .Image-div i
+{
+font-size: 35px;
+margin-bottom: 10px;
+color: rgba(255, 0, 0, 0.893);
+
+}
+.Image-Parent .Image-div p
+{
+font-size: 22px;
+font-weight: bold;
+color: rgba(255, 255, 255, 0.933);
+}
+.Image-Overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.Pricing-Container
+{
+    width: 80%;
+    margin: auto;
+}
+.Pricing-Container .Pricing-h2
+{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 100px 0px 10px 0;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Pricing-Container .Pricing-PUlLine
+{
+    height: 5px;
+    width: 8%;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Pricing-Parent
+{
+    width: 100%;
+    height: 400px;
+}
+.Pricing-div
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+    border: 1px solid rgb(153, 1, 1);
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+}
+.Pricing-div2
+{
+    margin: 0 5%;
+}
+.Pricing-div-p1
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Pricing-div1-Circlediv
+{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    margin: auto;
+    border: 1px solid rgb(153, 1, 1);
+}
+.Pricing-circlediv-p1
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding:25px 0 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px;
+}
+.Pricing-circlediv-p2
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+.Pricing-div-p
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 0 20px 0;
+}
+.Pricing-btn
+{
+    height:30px;
+    width: 190px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(228, 0, 0);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Pricing-div::after
+{
+    position: absolute;
+    content: "";
+    height: 0;
+    width:100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(153, 1, 1);
+    opacity: 0.4;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.Pricing-div:hover::after
+{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+.Pricing-div:hover .Pricing-div-p1
+{
+color: rgb(246, 6, 6);
+} 
+.Pricing-div:hover .Pricing-div1-Circlediv
+{
+border:2px solid rgb(246, 6, 6);
+} 
+.Member-Container
+{
+    margin-top: 100px;
+    width: 100%;
+position: relative;
+}
+.Member-background
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+background-attachment: fixed;
+background-position: bottom;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url("../Images/10.jpg");
+    z-index: -3;
+}
+.Member-Overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -2;
+}
+.Member-Parent
+{
+    width: 70%;
+    margin: auto;
+    height: 500px;
+}
+.Member-Parent-div 
+{
+    height: 50%;
+    width: 45%;
+    float: left;
+    margin-top: 170px;
+    position: relative;
+}
+.Member-Parent-div2
+{
+    margin-left: 10%;
+}
+.Member-img
+{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+ float: left;
+ margin-left: 10px;
+}
+.Member-divtittle
+{
+    width: 70%;
+    margin-left: 10px;
+    float: left;
+}
+.Member-Pdescrip
+{
+    position: absolute;
+    top: 120px;
+    float: left ;
+}
+.Member-divtittle .Member-Pname
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(255, 255, 255, 0.921);
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.Member-divtittle .Member-Punname
+{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.Member-Pdescrip
+{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.733);
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 90%;
+}
+.Our-Container
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+.Our-h2
+{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Our-PUlLine
+{
+    height: 5px;
+    width: 8%;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Our-Parent
+{
+    width: 100%;
+    height: 350px;
+}
+.Our-innerdiv
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+    border-radius: 15px;
+    background-color: rgba(238, 238, 238, 0.63);
+    text-align: center;
+    position: relative;
+}
+.Our-innerdiv2
+{
+    margin: 0 5%;
+}
+.Our-image
+{
+    height: 60%;
+    width: 80%;
+    margin: 20px auto 20px auto;
+}
+.Our-innerdivp1
+{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.Our-innerdivp2
+{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.638);
+    letter-spacing: 1px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.Our-image1
+{    background-image: url("../Images/per3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.Our-image2
+{    background-image: url("../Images/per4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        position: relative;
+
+}
+.Our-image3
+{    background-image: url("../Images/per5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+        position: relative;
+
+}
+.Our-Overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.403);
+    visibility: hidden;
+    z-index: 2;
+}
+.Our-Icons
+{
+    width: 13%;
+    float: right;
+    background-color: rgb(255, 17, 0);
+}
+.Our-Icons i
+{
+    padding: 12px 2px;
+    display: block;
+    font-size: 18px;
+    color: rgba(173, 49, 0, 0.403);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.Our-Icons a
+{
+text-decoration: none;
+}
+.Our-innerdiv::after{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.403);
+    border-radius: 15px;
+    transition: 0.5s;
+    z-index: 1;
+    opacity: 1;
+}
+.Our-innerdiv:hover::after
+{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.Our-innerdiv:hover .Our-Overlay
+{
+    visibility: visible;
+}
+.Our-Icons .i1:hover
+{
+    color: rgb(0, 38, 255);
+}
+.Our-Icons .i2:hover
+{
+    color: rgb(0, 255, 247);
+}
+.Our-Icons .i3:hover
+{
+    color: rgb(0, 38, 255);
+}
+.Our-innerdiv:hover .Our-innerdivp1
+{
+    color: rgb(255, 0, 0);
+}
+.Our-innerdiv:hover .Our-innerdivp2
+{
+    color: rgb(39, 0, 0);
+}
+.Recent-Container
+{
+    width: 85%;
+    margin: auto;
+    margin-top: 200px;
+}
+.Recent-h2
+{
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 0px 0px 10px 0;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Recent-PUlLine
+{
+    height: 5px;
+    width: 8%;
+    margin: auto;
+    background-color: rgb(173, 2, 2);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.Recent-Parent
+{
+    width: 100%;
+    height: 550px;
+}
+.Recent-div
+{
+    width: 32%;
+    height: 100%;
+    float: left;
+    border: 1px solid rgb(153, 1, 1);
+    border-radius: 15px;
+    position: relative;
+}
+.Recent-div2
+{
+    margin: 0 2%;
+}
+.Recent-Image
+{
+    height: 50%;
+    width: 75%;
+    margin: 25px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.Recent-Icons
+{
+    width:90%;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+.Recent-Icons p
+{
+    display: inline;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0 10px;
+}
+.Recent-Icons i
+{
+    padding: 0 10px;
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.Recent-p1
+{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0 0 25px 20px;
+    text-align: center;
+}
+.Recent-p2
+{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.638);
+    letter-spacing: 1px;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom:25px;
+}
+.Recent-div .Recent-last-p
+{
+    color: rgb(153, 1, 1);
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.Recent-div .Recent-last-p a
+{
+    text-decoration: none;
+    color: rgb(153, 1, 1);
+}
+.Recent-Image1
+{
+    background-image: url("../Images/person1.jpg");
+}
+.Recent-Image2
+{
+    background-image: url("../Images/person2.jpg");
+}
+.Recent-Image3
+{
+    background-image: url("../Images/person3.jpg");
+}
+.Recent-div::after
+{
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(111, 0, 0);
+    opacity: 0.4;
+    border-radius: 15px;
+    z-index: -1;
+    transition: 0.6s;
+}
+.Recent-div:hover::after
+{
+    height: 100%;
+    width: 100%;
+}
+.Recent-div:hover .Recent-p1
+{
+    color: rgb(255, 255, 255);
+}
+.Recent-div:hover .Recent-p2
+{
+    color:rgb(172, 0, 0);
+}
+.Recent-div:hover .Recent-last-p a
+{
+    color:rgb(4, 0, 255);
+    transition: 0.6s;
+}
+.Footer-Container
+{
+    width: 100%;
+    background-color: rgba(153, 1, 1, 0.237);
+    margin-top: 150px;
+}
+.Footer-Parent
+{
+    width: 60%;
+    margin: auto;
+    height: 290px;
+    text-align: center;
+}
+.Footer-Image
+{
+    height: 200px;
+    width: 250px;
+    border: 0cap;
+    border-radius: 20px;
+    background-image: url("../Images/Court2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+.Footer-Icons
+{
+    margin-bottom: 8px;
+}
+.Footer-Icons a i
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    background-color:rgba(186, 2, 2, 0.689);
+    color: white;
+}
+.Footer-Icons li
+{
+    display: inline-block;
+    border-radius: 25px;
+}
+.Footer-plast
+{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.94);
+    letter-spacing: 0.5px;
+}
+.Footer-Icons li:hover
+{
+    background-color:rgba(186, 2, 2, 0.821);
+    transition: 0.1s;
+    border-radius: 25px;
+}
